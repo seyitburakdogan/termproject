@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SinavSistemi.KonuSec"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#FFF1EAEA" HorizontalAlignment="Left" Width="480">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0" Margin="-1,0,0,28" Background="#FF265D1E" Width="478" HorizontalAlignment="Center">
+            <TextBlock Name="txtIsim" Text="İsim" Foreground="White" HorizontalAlignment="Left" Margin="10,7,0,10"></TextBlock>
+            <TextBlock Name="txtSinif" Text="Sinif" Foreground="White" HorizontalAlignment="Left" Margin="10,7,0,10"></TextBlock>
+            <TextBlock Name="txtNumara" Text="Numara" Height="28" Foreground="White" HorizontalAlignment="Left" Margin="10,10,0,10"></TextBlock>
+            <Grid x:Name="baslik" Background="#FFF1EAEA">
+                <TextBlock Name="txtBaslik" Height="48" Foreground="#FF265D1E" HorizontalAlignment="Center" Margin="10,50,10,0"></TextBlock>
+            </Grid>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,-10,12,0" Loaded="ContentPanel_Loaded">
+            <ListBox x:Name="_listKonuListesi" Background="#FFF1EAEA" ItemsSource="{Binding}" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,10,0,0" Background="#FF265D1E" x:Name="grid_12" Tap="grid_12_Tap" Tag="{Binding KonuAdi}" >
+
+                            <Grid Width="350" Height="45" HorizontalAlignment="Center">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <!--<ColumnDefinition/>
+                                    <ColumnDefinition/>-->
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderBrush="#FF265D1E" BorderThickness="0"/>
+                                <TextBlock x:Name="KonuAdi"  Foreground="White" Text="{Binding KonuAdi}" FontSize="23" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="0" Margin="10"/>
+                                <!--<TextBlock x:Name="DersSinif" Foreground="White" Text="{Binding DersSinif}" FontSize="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Margin="10"/>-->
+                                <!--<TextBlock x:Name="txt_sec" Text="SINAVLAR" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="White" Margin="0,0,0,8" FontSize="18"></TextBlock>-->
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

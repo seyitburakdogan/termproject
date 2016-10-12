@@ -1,0 +1,35 @@
+﻿<xapCache source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Bin\Debug\SinavSistemi_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="6.10.2016 22:44:31">
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.dll" archivePath="SinavSistemi.dll" lastWriteTime="6.10.2016 22:44:28" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\logo.png" archivePath="logo.png" lastWriteTime="15.1.2015 01:19:50" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\TextFile1.txt" archivePath="TextFile1.txt" lastWriteTime="10.1.2015 23:55:13" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="18.1.2015 01:05:51" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="30.11.2014 23:58:54" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="6.12.2014 22:04:55" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WindowsAzure.MobileServices.1.3.0\lib\wp8\Microsoft.WindowsAzure.Mobile.dll" archivePath="Microsoft.WindowsAzure.Mobile.dll" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WindowsAzure.MobileServices.1.3.0\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.dll" archivePath="Microsoft.WindowsAzure.Mobile.Ext.dll" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WindowsAzure.MobileServices.1.3.0\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.dll" archivePath="Microsoft.WindowsAzure.Mobile.UI.dll" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="10.1.2015 18:47:17" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.dll" archivePath="System.Net.Http.dll" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll" archivePath="System.Net.Http.Extensions.dll" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll" archivePath="System.Net.Http.Primitives.dll" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WindowsAzure.MobileServices.1.3.0\lib\wp8\Microsoft.WindowsAzure.Mobile.xml" archivePath="Microsoft.WindowsAzure.Mobile.xml" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WindowsAzure.MobileServices.1.3.0\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.xml" archivePath="Microsoft.WindowsAzure.Mobile.Ext.xml" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\WindowsAzure.MobileServices.1.3.0\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.xml" archivePath="Microsoft.WindowsAzure.Mobile.UI.xml" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="10.1.2015 18:47:17" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.xml" archivePath="System.Net.Http.xml" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="10.1.2015 18:47:18" />
+  <file source="D:\projeler\DonemProjesi\SinavSistemi\SinavSistemi\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="20.1.2015 11:15:07" />
+</xapCache>

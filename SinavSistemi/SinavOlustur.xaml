@@ -1,0 +1,85 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SinavSistemi.SinavOlustur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="Anim_SoruDondur_1" Completed="Anim_SoruDondur_1_Completed">
+            <DoubleAnimation Duration="0:0:0.2" To="-90" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="gridSoruMetni" d:IsOptimized="True"/>
+        </Storyboard>
+        <Storyboard x:Name="Anim_SoruDondur_2" Completed="Anim_SoruDondur_2_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="gridSoruMetni">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#FF265D1E" HorizontalAlignment="Left" Width="480">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0" Margin="-1,0,0,28" Background="#FFF1EAEA" Width="478" HorizontalAlignment="Center">
+
+            <TextBlock Name="txtSinif" Text="Sinif" Foreground="#FF265D1E" HorizontalAlignment="Left" Margin="10,7,0,10"></TextBlock>
+            <TextBlock Name="txtDers" Text="Ders" Foreground="#FF265D1E" HorizontalAlignment="Left" Margin="10,7,0,10"></TextBlock>
+            <TextBlock Name="txtKonu" Text="Konu" Height="28" Foreground="#FF265D1E" HorizontalAlignment="Left" Margin="10,10,0,10"></TextBlock>
+            <Grid x:Name="baslik" Background="#FF265D1E">
+                <TextBlock FontSize="30" Height="40" Foreground="White" HorizontalAlignment="Center" Margin="10,30,10,0">
+                    <Run x:Name="txtSinavIsim"></Run>
+                    <Run Text=" - "></Run>
+                    <Run Text="Soru " />
+                    <Run x:Name="txtSoruNo" Text="1" />
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="gridSoruMetni" Margin="10,214,14,10" Loaded="ContentPanel_Loaded" Grid.RowSpan="2">
+            <Grid.Projection>
+                <PlaneProjection/>
+            </Grid.Projection>
+            <Grid x:Name="grdSoruMetin" Width="455" Height="150" VerticalAlignment="Top">
+                <TextBlock Text="Soru Metni:" Margin="14,-10,0,0" Width="100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left"></TextBlock>
+                <TextBox Name="txtSoruMetni" Width="450" Height="130" VerticalAlignment="Top" Margin="0,15,0,0" TextWrapping="Wrap"></TextBox>
+            </Grid>
+
+            <Grid x:Name="grdSoruSecenek" Width="455" Height="534" VerticalAlignment="Top" Margin="0,0,1,0">
+                <TextBlock Text="Seçenekler:" Margin="14,-215,0,0" Width="100" Height="30" HorizontalAlignment="Left"></TextBlock>
+                <TextBox x:Name="txtSecA" Width="384" Height="70" HorizontalAlignment="Left" Margin="71,33,0,137"></TextBox>
+
+                <TextBox x:Name="txtSecB" Width="384" Height="70" HorizontalAlignment="Left" Margin="71,239,0,225"/>
+                <TextBox x:Name="txtSecC" Width="384" Height="70" HorizontalAlignment="Left" Margin="71,296,0,168"/>
+                <TextBox x:Name="txtSecD" Width="384" Height="70" HorizontalAlignment="Left" Margin="71,354,0,110"/>
+                <Button x:Name="btn_Bitti" Content="Bitti" HorizontalAlignment="Left" Margin="2,468,0,-6" VerticalAlignment="Top" Width="196" Click="btn_Bitti_Click"/>
+                <Button x:Name="btn_ekleSoru" Content="Ekle&#xD;&#xA;" HorizontalAlignment="Right" Margin="0,468,0,-6" VerticalAlignment="Top" Width="196" Click="btn_yeniSoru_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="140,433,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+                    <Run Text="Doğru Seçenek : "/>
+                    <Run Text="A" FontWeight="Bold"  x:Name="txtDogruSecenek"/>
+                </TextBlock>
+
+
+
+            </Grid>
+            <RadioButton Content="(A" HorizontalAlignment="Left" Margin="0,182,0,0" VerticalAlignment="Top" Width="86" FontSize="18" FlowDirection="RightToLeft" Checked="RadioButton_Checked" IsChecked="True"/>
+            <RadioButton Content="(B" HorizontalAlignment="Left" Margin="0,239,0,0" VerticalAlignment="Top" Width="86" FontSize="18" FlowDirection="RightToLeft" Checked="RadioButton_Checked"/>
+            <RadioButton Content="(C" HorizontalAlignment="Left" Margin="0,297,0,0" VerticalAlignment="Top" Width="86" FontSize="18" FlowDirection="RightToLeft" Checked="RadioButton_Checked"/>
+            <RadioButton Content="(D" HorizontalAlignment="Left" Margin="0,355,0,0" VerticalAlignment="Top" Width="86" FontSize="18" FlowDirection="RightToLeft" Checked="RadioButton_Checked"/>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

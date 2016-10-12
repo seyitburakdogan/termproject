@@ -1,0 +1,75 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SinavSistemi.SoruEkle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#FF265D1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="SINAV HAZIRLAMA SAYFASI" Margin="0,-7,0,0" FontSize="30" HorizontalAlignment="Center"/>
+            <Border BorderBrush="White" Width="415" HorizontalAlignment="Left" BorderThickness="0,0,0,3" Margin="24,-10,0,50" Height="20"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Loaded="ContentPanel_Loaded">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="soruekle" Width="430" Margin="13,1,13,73" Grid.RowSpan="2">
+
+                <TextBlock Text="Sınıf:" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,23,0,0"></TextBlock>
+
+
+                <TextBlock Text="Ders:" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,249,0,0"></TextBlock>
+
+                <TextBlock Text="Konu:" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,359,0,0"></TextBlock>
+
+
+                <toolkit:ListPicker Width="430" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,394,0,0" x:Name="_lstKonu" ItemsSource="{Binding}">
+                    <toolkit:ListPicker.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="adsa" Text="{Binding KonuAdi}"/>
+                        </DataTemplate>
+                    </toolkit:ListPicker.ItemTemplate>
+                </toolkit:ListPicker>
+
+
+                <TextBlock Text="İsim:" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,139,0,0"></TextBlock>
+                <TextBox Name="txtSinavIsmi" Width="450" Height="75" HorizontalAlignment="Right" Margin="-10,172,-10,282"></TextBox>
+
+
+                <Button Name="btnSoruEkle" Width="300" Height="80" Margin="65,527,65,-78" Content="Soruları Eklemeye Başla" Click="btnSoruEkle_Click"></Button>
+                <toolkit:ListPicker Width="430" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,279,0,0" x:Name="_lstDers" ItemsSource="{Binding}" SelectedItem="{Binding RecipientList, Mode=TwoWay}" SelectionChanged="_lstDers_SelectionChanged">
+                    <toolkit:ListPicker.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="adsa" Text="{Binding DersAdi}"/>
+                        </DataTemplate>
+                    </toolkit:ListPicker.ItemTemplate>
+                </toolkit:ListPicker>
+                <Button x:Name="btn_Sonuclar" Width="300" Height="80" Margin="65,-81,65,530" Content="Sınav Sonuçlarını Gör" Click="btn_Sonuclar_Click"/>
+            </Grid>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
